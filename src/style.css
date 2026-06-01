@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#controls {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#category-search {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.category-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.2s ease;
+}
+
+.category-button:hover {
+    background-color: #0056b3;
+}
+
+.category-button.active {
+    background-color: #28a745;
+}
+
+#schedule {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.talk-entry, .break-entry, .transition-entry {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.talk-entry:last-child, .break-entry:last-child, .transition-entry:last-child {
+    border-bottom: none;
+}
+
+.talk-entry h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #007bff;
+}
+
+.talk-entry .time {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.talk-entry .speakers {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.talk-entry .categories span {
+    background-color: #e9ecef;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-right: 5px;
+    font-size: 0.85em;
+    color: #555;
+}
+
+.talk-entry .description {
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.break-entry {
+    background-color: #ffeeba;
+    border-left: 5px solid #ffc107;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.break-entry h3 {
+    margin: 0;
+    color: #856404;
+}
+
+.break-entry .time {
+    font-weight: bold;
+    color: #856404;
+}
+
+.transition-entry {
+  font-style: italic;
+  color: #777;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9em;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    #category-filters {
+        flex-direction: column;
+    }
+}
